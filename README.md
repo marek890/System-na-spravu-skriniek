@@ -1,4 +1,4 @@
 # System-na-spravu-skriniek
-Idze nejdze ?
+Ide to?
 Nejdze more
 JAKO
