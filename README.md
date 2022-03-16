@@ -1,4 +1,3 @@
 # System-na-spravu-skriniek
-Ahoj Svet by Skaličan
-Nejdze more
-JAKO
+Ahoj Svet by Kukurišta
+Ahoj svet by Kakashi
