@@ -1,4 +1,4 @@
 # System-na-spravu-skriniek
-Ide to?
+Ahoj Svet by Skaličan
 Nejdze more
 JAKO
