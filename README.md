@@ -1,3 +1,3 @@
 # System-na-spravu-skriniek
 Ahoj Svet by Kukurišta
-Ahoj svet by Kakashi
+Ahoj svet by Kakaši Hatake
