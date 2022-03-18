@@ -1,10 +1,11 @@
 
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 
 public class PridajZiaka extends javax.swing.JFrame {
-
+    ArrayList<String> UlozData = new ArrayList<String>();
   
     public PridajZiaka() {
         initComponents();
@@ -14,6 +15,7 @@ public class PridajZiaka extends javax.swing.JFrame {
         WindowEvent closeWindow = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(closeWindow);
     }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -42,12 +44,23 @@ public class PridajZiaka extends javax.swing.JFrame {
 
         jLabel2.setText("Meno");
 
+        FieldMeno.setBackground(new java.awt.Color(204, 204, 204));
+
         jLabel1.setText("Priezvisko");
+
+        FieldPriezvisko.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel3.setText("Telefone číslo");
 
+        FieldTelCislo.setBackground(new java.awt.Color(204, 204, 204));
+
         jLabel4.setText("ID");
 
+        FieldID.setBackground(new java.awt.Color(204, 204, 204));
+
+        OK.setBackground(new java.awt.Color(102, 102, 102));
+        OK.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
+        OK.setForeground(new java.awt.Color(0, 204, 204));
         OK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/OK.png"))); // NOI18N
         OK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,6 +68,7 @@ public class PridajZiaka extends javax.swing.JFrame {
             }
         });
 
+        GoBack.setBackground(new java.awt.Color(102, 102, 102));
         GoBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/GoBack.png"))); // NOI18N
         GoBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,14 +130,14 @@ public class PridajZiaka extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FieldID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(OK)
                     .addComponent(GoBack))
                 .addGap(19, 19, 19))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 420));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 440));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -134,6 +148,12 @@ public class PridajZiaka extends javax.swing.JFrame {
     }//GEN-LAST:event_GoBackActionPerformed
 
     private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
+        if(FieldMeno.getText().isEmpty() == false && FieldPriezvisko.getText().isEmpty() == false && FieldTelCislo.getText().isEmpty() == false && FieldID.getText().isEmpty() == false){
+        
+        
+        }
+        else
+        
         close();
     }//GEN-LAST:event_OKActionPerformed
 

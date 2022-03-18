@@ -19,13 +19,16 @@ public class Hlavne_okno extends javax.swing.JFrame {
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jFrame1 = new javax.swing.JFrame();
+        jMenu1 = new javax.swing.JMenu();
+        jScrollBar1 = new javax.swing.JScrollBar();
         Pozadie1 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         RemoveUser = new javax.swing.JButton();
         AddUser = new javax.swing.JButton();
         EditUser = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jScrollBar1 = new javax.swing.JScrollBar();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -39,6 +42,11 @@ public class Hlavne_okno extends javax.swing.JFrame {
 
         jTextPane1.setBackground(new java.awt.Color(153, 153, 153));
         jScrollPane1.setViewportView(jTextPane1);
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
+
+        jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -57,7 +65,7 @@ public class Hlavne_okno extends javax.swing.JFrame {
                 RemoveUserActionPerformed(evt);
             }
         });
-        jPanel1.add(RemoveUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 70, 60));
+        jPanel1.add(RemoveUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 70, 60));
 
         AddUser.setForeground(new java.awt.Color(255, 153, 153));
         AddUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AddUser.png"))); // NOI18N
@@ -75,14 +83,12 @@ public class Hlavne_okno extends javax.swing.JFrame {
                 EditUserActionPerformed(evt);
             }
         });
-        jPanel1.add(EditUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 70, 60));
+        jPanel1.add(EditUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 70, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 440));
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 153));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jScrollBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 0, 20, 350));
-
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 650, 350));
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
@@ -170,11 +176,14 @@ public class Hlavne_okno extends javax.swing.JFrame {
     private javax.swing.JLabel PocetSkriniek;
     private javax.swing.JPanel Pozadie1;
     private javax.swing.JButton RemoveUser;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
